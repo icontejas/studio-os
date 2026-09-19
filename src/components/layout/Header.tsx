@@ -51,19 +51,7 @@ export const Header: React.FC<HeaderProps> = ({
   }, []);
 
   return (
-    <header style={{
-      height: '68px',
-      borderBottom: '1px solid var(--line)',
-      background: 'rgba(11, 12, 15, 0.85)',
-      backdropFilter: 'blur(12px)',
-      position: 'sticky',
-      top: 0,
-      zIndex: 30,
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      padding: '0 40px'
-    }}>
+    <header className="app-header">
       {/* Search Bar Trigger */}
       <div style={{ flex: 1, maxWidth: '420px' }}>
         <button
